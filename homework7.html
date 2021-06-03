@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework7</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box div{
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            margin: 0;
+        }
+        .box{
+            margin: 0 auto;
+            padding: 0;
+            color: white;
+            font-size: 20px;
+        }
+        .li1{
+            background-color: red;
+        }
+        .li2{
+            background-color: blue;
+        }
+        .li3{
+            background-color: black;
+        }
+        .li4{
+            background-color: orange;
+        }
+        @media screen and (min-width:1200px){
+            .box div{
+                display: inline-block;
+                width: 20%;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1200px){
+            .li2,.li3,.li4{
+                display: inline-block;
+                width:30%;
+            }
+            .li1{
+                width: 91%;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px){
+            .box div{
+                display: inline-block;
+                width:40%;
+            }
+        }
+
+        @media screen and (max-width:768px){
+            .box div{
+                display: inline-block;
+                width:60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="li1">1</div>
+        <div class="li2">2</div>
+        <div class="li3">3</div>
+        <div class="li4">4</div>
+    </div>
+</body>
+</html>
